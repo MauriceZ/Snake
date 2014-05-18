@@ -1,0 +1,13 @@
+#grid{
+	width: 400px;
+	height: 400px;
+}
+
+.tile{
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 1px solid black;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
