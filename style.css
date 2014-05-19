@@ -1,13 +1,13 @@
 #grid{
-	width: 400px;
-	height: 400px;
+	width: 680px;
+	height: 680px;
+	margin: 0 auto;
 }
 
 .tile{
 	display: inline-block;
-	width: 8px;
-	height: 8px;
+	width: 15px;
+	height: 15px;
 	border: 1px solid black;
-	margin-bottom: 0px;
-	margin-top: 0px;
+	margin: -2px 0px;
 }
