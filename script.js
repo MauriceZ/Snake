@@ -2,7 +2,7 @@ var rand1 = Math.floor(Math.random()*39+1);
 var rand2 = Math.floor(Math.random()*39+1);
 
 var snake = {
-	position: [[rand1,rand2]],
+	position: [[rand1,rand2], [rand1+1,rand2], [rand1+2,rand2], [rand1+3,rand2]],
 	direction: 39,
 	count: 0
 }
@@ -131,7 +131,7 @@ function move(d){
 		$('#'+snake.position[i][0]+'-'+snake.position[i][1]).css("background-color","#000");
 	}
 
-	$('#'+temp[0][0]+'-'+temp[0][1]).css("background-color","#FFF");
+	$('#'+temp[temp.length-1][0]+'-'+temp[temp.length-1][1]).css("background-color","#FFF");
 	
 
 }
