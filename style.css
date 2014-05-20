@@ -1,13 +1,33 @@
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
+
+body,html{
+	font-family: 'Press Start 2P', sans-serif;
+}
+
+h1,h2{
+	text-align: center;
+}
+
+h2{
+	margin: 0;
+	padding: 0;
+}
+
+#best{
+	margin-bottom: 15px;
+}
+
 #grid{
-	width: 680px;
-	height: 680px;
+	width: 544px;
+	height: 544px;
 	margin: 0 auto;
+	padding: 0;
+	background-color: rgb(249,246,216);
 }
 
 .tile{
 	display: inline-block;
-	width: 15px;
-	height: 15px;
-	border: 1px solid black;
-	margin: -2px 0px;
+	width: 17px;
+	height: 17px;
+	margin: 0;
 }
