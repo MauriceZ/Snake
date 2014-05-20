@@ -18,7 +18,7 @@ function grid(){
 	$(function(){
 		var row = 1;
 		var column = 1;
-		for (var i=1; i<1281; i++){
+		for (var i=1; i<1025; i++){
 			$("#grid").append('<div class="tile" id="' + column + '-' + row + '"></div>')
 
 			if (column == 32){
@@ -165,15 +165,15 @@ function newGame(){
 				newApple();
 				growSnake();
 				$('#score').html(snake.count);
+				if (snake.count > bestScore){
+					bestScore = snake.count;
+					$('#bestScore').html(bestScore);
+				}
 			}
 
 			move();
 
 			if(is_dead()){
-				if (snake.count > bestScore){
-					bestScore = snake.count;
-					$('#bestScore').html(bestScore);
-				}
 				snake.count = 0;
 				clearInterval(interval);
 				alert('Dead!');
