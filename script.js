@@ -34,6 +34,10 @@ function grid(){
 	});
 };
 
+
+
+
+
 function growSnake(){
 
 	var newSnakePart;
@@ -190,12 +194,3 @@ var speed = 50;
 grid();
 var bestScore = 0;
 newGame();
-
-
-
-
-
-
-
-
-
